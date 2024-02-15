@@ -67,8 +67,14 @@ function Register() {
                 <div>
                   <label>Email</label>
                   <input onChange={e=>setStudentInput({...studentInput, email:e.target.value})} value={studentInput.email} type="text" className='form-control w-75' placeholder="Enter Your Email" />
-                  <label>Gender</label>
-                  <input onChange={e=>setStudentInput({...studentInput, gender:e.target.value})} value={studentInput.gender} type="text" className='form-control w-75' placeholder="Enter Your Gender" />
+                  
+                  <select onChange={e=>setStudentInput({...studentInput, gender:e.target.value})} value={studentInput.gender} name="course" id="course" className='form-control w-75'>
+                  <option >--select--</option>
+                    <option >Male</option>
+                    <option >Female</option>
+                    <option >Other</option>
+                  </select>
+
                   <label>Date of Birth</label>
                   <input onChange={e=>setStudentInput({...studentInput, dob:e.target.value})} value={studentInput.dob} type="date" className='form-control w-75' placeholder="Enter Your Date of Birth" />
                   <label >Course</label>
