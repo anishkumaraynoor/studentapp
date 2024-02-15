@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import students from '../assets/students.png'
 import { registerAPI } from '../../services/allAPIs'
+import Header from '../components/Header'
 
 
 function Register() {
@@ -41,6 +42,7 @@ function Register() {
 
   return (
     <>
+    <Header></Header>
       <div style={{ height: '100vh' }} className='bg-warning d-flex justify-content-center align-items-center'>
         <div className='row w-100 d-flex justify-content-center align-items-center'>
           <Col style={{ padding: '10%' }} lg={4}>

@@ -5,11 +5,13 @@ import { Link } from 'react-router-dom'
 
 
 
-import image from '../assets/images.jpeg'
+import image from '../assets/images.png'
+import Header from '../components/Header'
 
 function Home() {
   return (
     <>
+    <Header></Header>
     <div style={{ height: '100vh' }} className='bg-warning d-flex justify-content-center align-items-center'>
         <div className='row w-100'>
         <Col style={{padding:'10%'}} lg={6}>
