@@ -5,6 +5,6 @@
 
 
 
-const SERVER_URL = "http://localhost:3000"
+const SERVER_URL = "https://student-server-8gp6.onrender.com"
 
 export default SERVER_URL
